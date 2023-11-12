@@ -12,13 +12,16 @@ const Header = () => {
 
   return (
     <div className="header">
-      <img src="/pangea-logo.svg" alt="Pangea Logo" />
+      <h1>
+        <Link to='/' style={{textDecoration: "none"}}>Notes</Link>
+      </h1>
       {authenticated && (
         <div className="nav">
           <Link to="/">Home</Link>
           <Link to="/profile">Profile</Link>
         </div>
       )}
+
       {authenticated ? (
         <button onClick={handleLogout}>Logout</button>
       ) : (

@@ -23,11 +23,11 @@ const Router = () => {
 
   if (loading) {
     return (<Status message="Loading" />);
-  } else if (error) {   
-    console.warn("Error:", error); 
+  } else if (error) {
+    console.warn("Error:", error);
     logout();
   }
-  
+
   return (
     <div className="app">
       <Header />

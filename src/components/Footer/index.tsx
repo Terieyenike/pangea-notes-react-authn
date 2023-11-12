@@ -1,6 +1,11 @@
 const Footer = () => {
   return (
-    <div className="footer">©2023 Pangea</div>
+    <div className="footer">
+      <p>Made with ❤️ by Teri</p>
+      <p>
+        <img src="./pangea-logo.svg" alt="Pangea" />
+      </p>
+    </div>
   );
 }
 

@@ -1,32 +1,61 @@
+
+import { useState } from "react";
 import { useAuth } from "@pangeacyber/react-auth";
-import { getDateTime } from "../../utils";
+import { nanoid } from "nanoid";
+import Search from "@src/components/Search";
+import NotesList from "@src/components/NotesList";
+
+interface Note {
+  id: string;
+  text: string;
+  date: string;
+}
 
 const Home = () => {
   const { authenticated, user } = useAuth();
-  const loginLoc = user?.profile["Last-Login-City"] ? `${user.profile["Last-Login-City"]}, ${user.profile["Last-Login-Country"]}` : "Unknown"
-  const loginIP = user?.profile["Login-From"];
-  const loginTime = getDateTime(user?.profile["Login-Time"]);
 
+  const [notes, setNotes] = useState<Note[]>([]);
+  const [searchText, setSearchText] = useState<string>("");
+
+  const addNote = (text: string) => {
+    const date = new Date();
+    const newNote: Note = {
+      id: nanoid(),
+      text: text,
+      date: date.toLocaleDateString(),
+    };
+    const newNotes = [...notes, newNote];
+    setNotes(newNotes);
+  };
+
+  const deleteNote = (id: string) => {
+    const newNotes = notes.filter((note) => note.id !== id);
+    setNotes(newNotes);
+  };
 
   return (
     <div className="home">
-      <h1>Home</h1>
       <div style={{ marginBottom: "16px" }}>
-        {authenticated ?
-          (<span className="success">Authenticated</span>) :
-          (<span className="warn">Unauthenticated</span>)
-        }
+        {authenticated ? (
+          <span className="success">Authenticated</span>
+        ) : (
+          <span className="warn">Unauthenticated</span>
+        )}
       </div>
-      {!!user &&
+      {!!user && (
         <div>
-          <h5>Last Login</h5>
-          <div>{loginTime}</div>
-          {loginLoc && <div>{loginLoc}</div>}
-          <div>{loginIP}</div>
+          <Search handleSearchNote={setSearchText} />
+          <NotesList
+            notes={notes.filter((note) =>
+              note.text.toLowerCase().includes(searchText)
+            )}
+            handleAddNote={addNote}
+            handleDeleteNote={deleteNote}
+          />
         </div>
-      }
+      )}
     </div>
   );
-}
+};
 
 export default Home;
