@@ -1,4 +1,4 @@
-# Pangea React Authn Demo
+# Notes app
 
 ## Setup
 
