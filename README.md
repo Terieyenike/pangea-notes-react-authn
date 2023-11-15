@@ -1,6 +1,6 @@
 # Notes app
 
-Authenticated notes app using React, Pangea AuthN service, and local storage to store data locally on the user's device.
+Authenticated notes app using React, Pangea AuthN service to prevent unauthorized access, and local storage to store data locally on the user's device.
 
 ### Demo
 
