@@ -4,8 +4,8 @@ Authenticated notes app using React, Pangea AuthN service to prevent unauthorize
 
 ### Demo
 
-![Screenshot 2023-11-15 at 07 25 48](https://github.com/Terieyenike/xata-with-nextjs/assets/25850598/7b408e89-8e43-4bc2-8a11-28987c641f0c)
-![Screenshot 2023-11-15 at 07 28 21](https://github.com/Terieyenike/xata-with-nextjs/assets/25850598/c97acead-b877-4361-9c94-8f5049df91ce)
+![all notes](https://github.com/Terieyenike/xata-with-nextjs/assets/25850598/7b408e89-8e43-4bc2-8a11-28987c641f0c)
+![login page](https://github.com/Terieyenike/xata-with-nextjs/assets/25850598/c97acead-b877-4361-9c94-8f5049df91ce)
 
 ## Setup
 
