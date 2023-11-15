@@ -1,5 +1,12 @@
 # Notes app
 
+Authenticated notes app using React, Pangea AuthN service, and local storage to store data locally on the user's device.
+
+### Demo
+
+![Screenshot 2023-11-15 at 07 25 48](https://github.com/Terieyenike/xata-with-nextjs/assets/25850598/7b408e89-8e43-4bc2-8a11-28987c641f0c)
+![Screenshot 2023-11-15 at 07 28 21](https://github.com/Terieyenike/xata-with-nextjs/assets/25850598/c97acead-b877-4361-9c94-8f5049df91ce)
+
 ## Setup
 
 ### Clone the repo and install dependencies
@@ -48,3 +55,12 @@ Set the following values in .env.local
 ### Vist the app
 
 Open `http://localhost:3000` in a browser.
+
+### Tech stack
+
+- React
+- Pangea
+
+### Author
+
+[Teri Eyenike](https://twitter.com/terieyenike)
