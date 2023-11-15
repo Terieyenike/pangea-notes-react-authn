@@ -7,6 +7,12 @@ Authenticated notes app using React, Pangea AuthN service to prevent unauthorize
 ![all notes](https://github.com/Terieyenike/xata-with-nextjs/assets/25850598/7b408e89-8e43-4bc2-8a11-28987c641f0c)
 ![login page](https://github.com/Terieyenike/xata-with-nextjs/assets/25850598/c97acead-b877-4361-9c94-8f5049df91ce)
 
+### Deployed app
+
+Check out the app:
+
+[React notes app](https://notes-ten-beryl.vercel.app/)
+
 ## Setup
 
 ### Clone the repo and install dependencies
