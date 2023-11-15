@@ -17,7 +17,6 @@ const Header = () => {
       </h1>
       {authenticated && (
         <div className="nav">
-          <Link to="/">Home</Link>
           <Link to="/profile">Profile</Link>
         </div>
       )}
