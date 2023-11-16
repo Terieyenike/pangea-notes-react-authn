@@ -67,6 +67,10 @@ Open `http://localhost:3000` in a browser.
 - React
 - Pangea
 
+### Article 
+
+[Shield Your Thoughts: Building an Encrypted Note App with React and Pangea Authentication](https://terieyenike.hashnode.dev/encrypted-note-app)
+
 ### Author
 
 [Teri Eyenike](https://twitter.com/terieyenike)
